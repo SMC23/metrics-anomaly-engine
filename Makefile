@@ -25,7 +25,7 @@ test:
 	cd backend && $(UV_RUN) pytest tests/unit --cov=engine --cov-report=term-missing
 
 test-int:
-	@echo test-int: not implemented yet
+	cd backend && $(UV_RUN) pytest tests/integration -m integration
 
 train:
 	@echo train: not implemented yet
